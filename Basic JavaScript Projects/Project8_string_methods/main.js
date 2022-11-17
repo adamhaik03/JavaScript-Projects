@@ -18,9 +18,10 @@ function myUpper() { //naming and definig a variable
     document.getElementById("upper").innerHTML = X.toUpperCase(); //putting a value of a result into HTML element
 }
 
+function mySearch() {
 let text = "Let's make a cake for Drake"; //defining and naming a variable
 let cake = "cake"; //defining and naming a variable
-// document.getElementById("search").innerHTML = text.search(cake); 
+document.getElementById("search").innerHTML = text.search(cake); //using search method and putting a value of a result into HTML element
 console.log(text.search(cake)); //using search method and putting a value into console
 
 function myNumToStr() { //defining and naming a function
