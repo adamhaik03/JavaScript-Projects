@@ -23,6 +23,7 @@ let text = "Let's make a cake for Drake"; //defining and naming a variable
 let cake = "cake"; //defining and naming a variable
 document.getElementById("search").innerHTML = text.search(cake); //using search method and putting a value of a result into HTML element
 console.log(text.search(cake)); //using search method and putting a value into console
+}
 
 function myNumToStr() { //defining and naming a function
     var X = 2137; //defining and naming a variable
