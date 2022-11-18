@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+        <link rel="stylesheet" type="text/css" href="css_file.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+
+        <p>How many seconds would you like to set your alarm for?</p>
+        <input id="seconds" value="" />
+        <button onclick="countdown()">Click here.</button>
+        <p id="timer"></p>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/qat1.jpeg" style="width: 100%">
+                <div class="text">Ahmad Bin Ali Stadium</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/qat2.webp" style="width: 100%">
+                <div class="text">Stadium 974</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/qat3.jpeg" style="width: 100%">
+                <div class="text">Lusail Stadium</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/qat4.jpeg" style="width: 100%">
+                <div class="text">Al Janoub Stadium</div>
+            </div>
+        </div>
+        <br>
+
+        <div style="text-align: center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <script>
+            let slideIndex = 0; //naming and defining a variable(starting position)
+showSlides();//calling a function
+
+function showSlides() { //naming and defining a function
+    let i; //defining a variable
+    let slides = document.getElementsByClassName("mySlides");//naming and defining a variable by reading a value from HTML element
+    let dots = document.getElementsByClassName("dot");//naming and defining a variable by reading a value from HTML element
+    for (i = 0; i < slides.length; i++) { //creating a loop
+        slides[i].style.display = "none"; //executing code block
+    }
+    slideIndex++;//incrementing a value of element by 1
+    if (slideIndex > slides.length) {slideIndex = 1}//creating a conditional statement and executing a block of code
+    for ( i = 0; i < dots.length; i++) { //creating a loop
+        dots[i].className = dots[i].className.replace(" active", "");//executing a block of code
+    }
+    slides[slideIndex-1].style.display = "block";//displaying "block" property
+    dots[slideIndex-1].className += " active";//displaying " active" property
+    setTimeout(showSlides, 3000);//running a function every 3 seconds
+}
+        </script>
+    </body>
+</html>
