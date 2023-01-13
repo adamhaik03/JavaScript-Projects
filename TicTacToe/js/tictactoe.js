@@ -59,11 +59,12 @@ function placeXOrO(squareNumber) {
             //a random number between 0 and 8 is selected
             pickASquare = String(Math.floor(Math.random() * 9));
             //if random number evaluates returns true, the square hasn't been selected
-            if (placeXOrO(pickASquare));
-            //this line call the function
-            placeXOrO(pickASquare);
-            //this changes our boolean and ends the loop
-            success = true;
+            if (placeXOrO(pickASquare)) {
+                //this line call the function
+                placeXOrO(pickASquare);
+                //this changes our boolean and ends the loop
+                success = true;
+            };
         }
     }
 }
@@ -109,7 +110,7 @@ function checkWinConditions() {
         //this function play the tie game sound
         audio('./media/tie2.mp3');
         //this function sets a .3 second timer before the resetGame is called
-        setTimeout(function () { resetGame(); }, 1000)
+        setTimeout(function () { resetGame(); }, 1000);
     }
     //this function checks if an array includes 3 strings/
     //it is used to check for each win condition
@@ -130,7 +131,7 @@ function disableClick() {
     //this makes our body unclickable.
     body.style.pointerEvents = 'none';
     //this makes our body clickable again after 1 second.
-    setTimeout(function () { body.style.pointerEvents = 'auto'; }, 1000)
+    setTimeout(function () { body.style.pointerEvents = 'auto'; }, 1000);
 }
 
 //this function takes a string parameter of the path you set earlier for
@@ -160,7 +161,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
         //this variable stores temporary x axis data we update in our animation loop
         x = x1,
         //this variable stores temporary y axis data we update in our animation loop
-        y = y1
+        y = y1;
 
     //this function interacts with the canvas() {
     function animateLineDrawing() {
