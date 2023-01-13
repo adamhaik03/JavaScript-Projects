@@ -217,7 +217,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     animateLineDrawing();
     //this line waits 1 second
     //then, clears our canvas, resets game and allows clicking again
-    setTimeout(function () { clear(); resetGame(); }, 2000);
+    setTimeout(function () { clear(); resetGame(); }, 1000);
 }
 
 //this function resets the game in a tie or a win
