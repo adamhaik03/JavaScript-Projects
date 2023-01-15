@@ -7,7 +7,7 @@ let selectedSquares = [];
 function placeXOrO(squareNumber) {
     //This condition ensures a square hasn't be selected already
     //The .some() method is used to check each element of selectedSquare array to
-    //se if it contains the square number clicked on.
+    //see if it contains the square number clicked on.
     if (!selectedSquares.some(element => element.includes(squareNumber))) {
         //This variable retrieves the html element id that was clicked.
         let select = document.getElementById(squareNumber);
@@ -20,13 +20,13 @@ function placeXOrO(squareNumber) {
             //If activePlayer is equal to 'O', the o.png is placed in HTML.
             select.style.backgroundImage = 'url("images/o2.jpeg")';
         }
-        //squareNumber and activePlayer are concatenated together amd added to array.
+        //squareNumber and activePlayer are concatenated together and added to array.
         selectedSquares.push(squareNumber + activePlayer);
         //This calls a function to check for any win conditions.
         checkWinConditions();
         //This condition is for changing the active player.
         if (activePlayer === 'X') {
-            //If active player iks 'X' change it to 'O'
+            //If active player is 'X' change it to 'O'
             activePlayer = 'O';
             //if active player is anything other than 'X'
         } else {
@@ -69,8 +69,8 @@ function placeXOrO(squareNumber) {
     }
 }
 
-//this function parses the selecttedSquares array to search for win conditions.
-//drawWinLine finction is called to draw line if condition is met.
+//this function parses the selectedSquares array to search for win conditions.
+//drawWinLine function is called to draw line if condition is met.
 function checkWinConditions() {
     //X 0, 1, 2 condition
     if (arrayIncludes('0X', '1X', '2X')) { drawWinLine(50, 100, 558, 100); }
@@ -120,7 +120,7 @@ function checkWinConditions() {
         const b = selectedSquares.includes(squareB);
         const c = selectedSquares.includes(squareC);
 
-        //if the 3 vairables we pass are all included un our array true is
+        //if the 3 variables we pass are all included in our array true is
         //returned and our else if conidtion executes the drawWinLine function
         if (a === true && b === true && c === true) { return true; }
     }
@@ -154,9 +154,9 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     let x1 = coordX1,
         //this line indicates where the start of a lines y axis is
         y1 = coordY1,
-        //this line indicates where the start of a lines x axis is
+        //this line indicates where the end of a lines x axis is
         x2 = coordX2,
-        //this line indicates where the start of a lines y axis is
+        //this line indicates where the end of a lines y axis is
         y2 = coordY2,
         //this variable stores temporary x axis data we update in our animation loop
         x = x1,
