@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="JavaScript/JavaScript_1.js"></script>
+    </head>
+    <body>
+        <h3>Who is your favourite artist?</h3>
+        <p>Choose your favourite artist from listed below:</p>
+        <ul>
+            <li>Drake</li>
+            <li>Paul Kalkbrenner</li>
+            <li>Anyma</li>
+            <li>Rufus du Sol</li>
+            <li>Reinier Zonneveld</li>
+        </ul>
+
+        <input id="artistInput" type="text">
+        <button onclick="artistFunction()">Click.</button>
+        <p id="output"></p>
+
+        <h1 class="Click">This text will change!</h1>
+        <h3 class="Click">This text will not change!</h3>
+        <button onclick="Hello_World_Function()">Click me!</button>
+
+        <canvas id="hisCanvas" width="200" height="100" style="border:2px solid black ;"></canvas>
+        <canvas id="myCanvas" width="300" height="150" style="border: 2px solid black; "></canvas>
+
+        <script>
+            var d = document.getElementById("myCanvas");
+            var dtx = d.getContext("2d");
+
+            //create gradient
+            var grd = dtx.createLinearGradient(0, 0, 170, 0);
+            grd.addColorStop(0, "blue");
+            grd.addColorStop(1, "white");
+            // fill with gradient
+
+            dtx.fillStyle = grd;
+            dtx.fillRect(20, 20, 150, 100);
+        </script>
+
+
+        <script>
+            var c = document.getElementById("hisCanvas");
+            var ctx = c.getContext("2d");
+            
+            // Create gradient
+            var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+            grd.addColorStop(0,"red");
+            grd.addColorStop(1,"white");
+            
+            // Fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(10,10,150,80);
+            </script>
+    </body>
+</html>
