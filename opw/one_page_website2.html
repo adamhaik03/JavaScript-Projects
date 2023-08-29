@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Meet iPhone 13 Pro</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="one_page_website.css">
+    <script src="JS/one_page_website.js" defer></script>
+</head>
+
+<body>
+    <!-- NAV -->
+    <div class="wrap">
+        <div class="menu-container">
+            <ul class="menu">
+                <a href="#home">
+                    <li>HOME</li>
+                </a>
+                <a href="#gallery">
+                    <li>GALLERY</li>
+                </a>
+                <a href="#order">
+                    <li>ORDER</li>
+                </a>
+                <a href="#videos">
+                    <li>VIDEOS</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <!-- END NAV -->
+
+    <!-- HOME -->
+    <div id="home">
+        <div class="container">
+            <div class="text-center">
+                <span class="head-main">iPhone 13 Pro</span>
+                <p>A dramatically more powerful <span
+                        style="font-style:italic;font-weight: bold;color: rgb(235, 240, 100)">camera system</span>.<br>
+                    A <span style="font-style:italic;font-weight: bold;color: green">display</span> so responsive, every
+                    interaction feels new again.<br>
+                    The world&apos;s fastest smartphone <span
+                        style="font-style:italic;font-weight: bold;color: darkgoldenrod;">chip</span>. Exceptional
+                    durability.<br>
+                    And a huge leap in <span style="font-style:italic;font-weight: bold;color:red">battery</span>
+                    life.<br>
+                    And it costs <span
+                        style="font-style:italic;font-weight: bold;color:rgb(79, 153, 143);font-size: large;">only</span>
+                    &#163;769.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- END HOME -->
+
+    <!-- GALLERY -->
+    <section id="gallery">
+        <div class="container">
+            <h1>Gallery</h1>
+            <div class="flex-container">
+                <div class="row">
+                    <div class="column">
+                        <div class="photo-container">
+                            <img src="images/iphone_1.jpeg" style="width:100%" onclick="openModal();currentSlide(1)"
+                                class="hover-shadow cursor">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="photo-container">
+                            <img src="images/iphone_2.jpeg" style="width:100%" onclick="openModal();currentSlide(2)"
+                                class="hover-shadow cursor">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="photo-container">
+                            <img src="images/iphone_3.jpeg" style="width:100%" onclick="openModal();currentSlide(3)"
+                                class="hover-shadow cursor">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="photo-container">
+                            <img src="images/iphone_4.jpeg" style="width:100%" onclick="openModal();currentSlide(4)"
+                                class="hover-shadow cursor">
+                        </div>
+                    </div>
+
+
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 4</div>
+                                <img src="images/iphone_1.jpeg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 4</div>
+                                <img src="images/iphone_2.jpeg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 4</div>
+                                <img src="images/iphone_3.jpeg" style="width:100%">
+                            </div>
+
+                            <div class="mySlides">
+                                <div class="numbertext">4 / 4</div>
+                                <img src="images/iphone_4.jpeg" style="width:100%">
+                            </div>
+
+
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
+
+
+                            <div class="column">
+                                <img class="demo cursor" src="images/iphone_1.jpeg" style="width:100%"
+                                    onclick="currentSlide(1)" alt="iPhone 13 pro rear">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="images/iphone_2.jpeg" style="width:100%"
+                                    onclick="currentSlide(2)" alt="iPhone 13 pro rear">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="images/iphone_3.jpeg" style="width:100%"
+                                    onclick="currentSlide(3)" alt="iPhone 13 pro side view">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="images/iphone_4.jpeg" style="width:100%"
+                                    onclick="currentSlide(4)" alt="iPhone 13 pro rear landscape">
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- END PHOTO CONTAINER 3-->
+                </div>
+            </div>
+    </section>
+
+
+    <!--END GALLERY-->
+
+    <!-- ORDER-->
+    <section id="order">
+        <div class="container">
+            <div class="heading-padding">
+                <h1 class="heading-padding">Orders</h1>
+                <div class="reservation">
+                    <h2>Order your new iPhone 13 pro here!</h2>
+                    <p>Please provide us with your basic contact info and we will message you as soon as possible to
+                        finish your order!</p>
+                    <div>
+                        <form action="" method="post">
+                            <input class="rsvp" type="text" value="" placeholder="First Name">
+                            <input class="rsvp" type="text" value="" placeholder="Last Name">
+                            <input class="rsvp" type="text" value="" placeholder="Email Address">
+                            <input class="rsvp" type="text" value="" placeholder="Phone Number">
+                            <div class="form-spacer">
+                                <label class="terms">Terms and Conditions</label>
+                            </div>
+                            <div class="submit">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END ORDER -->
+
+    <!-- VIDEOS -->
+    <section id="videos">
+        <div class="container">
+            <div>
+                <h1>Videos</h1>
+                <!-- VIDEO CONTAINER 1 -->
+                <div class="video-container">
+                    <h2>Introducing to your new iPhone 13 pro</h2>
+                    <div class="iframe">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/qDX2_f7KkjU"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- END VIDEO CONTAINER 1-->
+            </div>
+        </div>
+    </section>
+    <!-- END VIDEOS-->
+
+    <!-- FOOTER -->
+    <div id="footer">
+        <footer>
+            <a href="www.newiphone13pro.com">www.newiphone13pro.com</a> &nbsp;|&nbsp; &copy; 2022
+        </footer>
+    </div>
+    <!--END FOOTER-->
+</body>
+
+</html>

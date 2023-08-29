@@ -1,0 +1,498 @@
+html {
+    font-family: sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 18px;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: normal;
+    color: cadetblue;
+    background-color: #d6cbd3;
+}
+
+#footer
+nav {
+display: block;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: darkgoldenrod;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+}
+
+h2 {
+    line-height: 30px;
+    padding-bottom: 20px;
+    color: yellowgreen;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.heading-padding {
+    padding-bottom: 40px;
+}
+
+section {
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* This ensures that the image cannot
+    render outside of their container
+    without forcing any scrollbars */
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.menu-container {
+    max-height: 340px;
+    margin: 0% auto;
+    content: " ";
+    /* top: 0
+    left: 0 */
+    /* position absolute; 8? /* to the top edge of the screen */
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0px auto;
+    background-color: #eca1a678;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+/*------------------
+HOME SECTION
+-------------------*/
+
+#home {
+    background: url(images/promo.jpeg) no-repeat 50% 50%;
+    background-attachment: fixed;
+    background-size: 100% auto;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 150px;
+    color: rgb(0, 0, 0);
+}
+
+#home p {
+    color: white;
+    font-size: 24px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.head-main {
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.8);
+    font-variant: initial;
+    color: #fff;
+    letter-spacing: 5pt;
+    word-spacing: 21pt;
+    font-size: 3cm;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 2;
+    font-weight: 600;
+    border: 5px groove #fff;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+/*--------------
+MENU
+---------------*/
+
+.menu {
+    color: rgb(255, 204, 0);
+    font: bold 12px/18px sans-serif;
+    text-align: center;
+    display: inline;
+    margin: 0% auto;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu li {
+    color: #000;
+    background-color: rgba(255, 255, 255, 1);
+    display: inline-block;
+    margin: 0% auto;
+    position: relative;
+    padding: 15px 4%;
+    border: 1px solid #9d9fa2;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background;
+    transition-duration: .4s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+
+.menu li:hover {
+    color: rgb(255, 204, 0);
+    background-color: rgba(100, 65, 0, 0.3);
+}
+
+/*-----------------
+GALLERY 
+---------------*/
+
+.photo {
+    position: relative;
+    line-height: 0;
+    margin-bottom: 2cm;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 1px;
+    border: 1px solid #021a40;
+    background-color: #ff0;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.7);
+}
+
+.photo-container {
+    text-align: center;
+    margin: 15px auto;
+    width: 240px;
+    height: 135px;
+}
+
+.photo-container img {
+    max-width: 100%;
+    width: 240px;
+    height: 135px;
+}
+
+/*---------------
+ORDER
+---------------*/
+
+
+#order {
+    background-color: #eca1a678;
+}
+
+.reservation {
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 8px;
+    background-color: #bdcebed2;
+    box-shadow: -1px -1px 1px 0 rgba(0, 0, 0, 0.1), 1px 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.reservation h2 {
+    line-height: 30px;
+    padding-bottom: 20px;
+    color: yellowgreen;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding-top: 20px;
+}
+
+.reservation p {
+    font-size: 18px;
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: normal;
+    color: cadetblue;
+    font-size: 20px;
+}
+
+.reservation form {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #8d8e8f;
+    padding: 12px 12px;
+    width: 70%;
+    border: 1px solid #808080;
+    margin: 2% auto;
+    border-radius: 7px;
+    background: rgb(227, 222, 222);
+    box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    font-family: sans-serif;
+}
+
+.reservation input[type="text"] {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #8d8e8f;
+    padding: 2% 1% 2% 7%;
+    width: 80%;
+    border-top: 1px solid #090b0d;
+    border-right: 2px solid #424549;
+    border-bottom: 2px solid #424549;
+    border-left: 1px solid #090b0d;
+    margin: 10px 1cm;
+    border-radius: 7px;
+    background: #13161b;
+    box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
+    font-family: sans-serif;
+}
+
+.reservation input[type="text"]:hover {
+    box-shadow: 0 0 18px rgba(100, 65, 0, .8);
+}
+
+.form-spacer {
+    padding: 30px 39px;
+}
+
+.terms {
+    margin: 30px 1px 0px 0;
+    padding-left: 52px;
+    font-size: 14px;
+    line-height: 5px;
+    color: #000;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: 600;
+    position: relative;
+    display: inline;
+    float: right;
+}
+
+.terms:hover {
+    color: brown;
+    text-decoration: underline;
+}
+
+.submit input[type="submit"] {
+    color: rgb(225, 225, 255);
+    cursor: pointer;
+    border: none;
+    font-weight: 900;
+    outline: none;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 0px 3%;
+    padding: 6px 0px;
+    width: 20%;
+    font-size: 18px;
+    transition: border-color 0.3s color 0.3s background-color 0.3s;
+    border-radius: 7px;
+    background-color: #797a7b;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.submit input[type="submit"]:hover {
+    color: #000;
+    background-color: #8d8e8f;
+    box-shadow: inset 1px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+/*---------------
+VIDEOS SECTION
+-----------------*/
+
+.videos {
+    background-color: aliceblue;
+}
+
+.video-container {
+    display: block;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 40px auto;
+    background-color: #eca1a678;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.video-container h2 {
+    text-align: center;
+    line-height: 30px;
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    color: yellowgreen;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.iframe {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+/*----------------
+FOOTER
+------------------*/
+
+#footer {
+    background-color: #eca1a678;
+    color: #000;
+    text-shadow: 2px 2px 8px 0 (0,0,0,0.4);
+    padding: 20px 50px 20px 50px;
+    text-align: right;
+}
+
+/*---------------
+lIGHTBOX
+----------------*/
+
+.row > .column {
+    padding: 0 2px;
+}
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Create four equal columns that floats next to eachother */
+  .column {
+    float: left;
+    width: 25%;
+ 
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Caption text */
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  img.demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
