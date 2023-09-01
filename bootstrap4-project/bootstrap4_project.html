@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link href="css.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <nav class="navbar navbar-expand-lg bg-info">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" href="#showtimes">Showtimes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" href="#deals">Deals</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary text-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid bg-info text-center">
+      <div class="container">
+        <h1 class="display-4 text-light">Academy Cinemas</h1>
+        <p class="lead text-light">Sit back, relax and enjoy the show...</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+
+          <img class="img-fluid" src="img/pdx.jpeg" alt="">
+
+        </div>
+        <div class="col-sm">
+
+          <h3>Accommodations:</h3>
+          <p>Located in beautiful Portland, Oregon's Pearl district, our reels have been spinning since 1959.</p>
+          <p>Showing our guests a great time is our passion and seeing their smiles is our pleasure.</p>
+          <p>All of our auditoriums are equipped with brand new Christie 3D&reg; sound systems!</p>
+          <p>Relax in our, extra-wide, plush cushioning recliners. Our seating arrangement is disability friendly
+            &#9855;.</p>
+
+        </div>
+        <div class="col-sm">
+          <!-- implementing dropdown plugin -->
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle " type="button" data-toggle="dropdown" aria-expanded="false">
+              Now playing:
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Beauty and the Beast</a>
+              <a class="dropdown-item" href="#">Ghost in the Shell</a>
+              <a class="dropdown-item" href="#">Kong: Skull Island</a>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+
+      <!-- showtimes-->
+      <!-- /showtimes-->
+
+      <div>
+        <h3 class="my-5">Showtimes:</h3>
+      </div>
+
+      <div class="card-group">
+        <div class="card">
+          <img src="img/beautyandthebeast.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Beauty and the Beast</h5>
+            <p class="card-text">A selfish prince is cursed to become a monster for the rest of his life, unless he
+              learns to fall in love with a beautiful young woman, he keeps prisoner.</p>
+          </div>
+          <div class="card-footer">
+            <span class="badge bg-primary text-light">12:00pm</span>
+            <span class="badge bg-primary text-light">1:00pm</span>
+            <span class="badge bg-primary text-light">3:00pm</span>
+            <span class="badge bg-primary text-light">5:30pm</span>
+            <span class="badge bg-primary text-light">7:00pm</span>
+            <span class="badge bg-primary text-light">9:30pm</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/ghostintheshell.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ghost in the Shell</h5>
+            <p class="card-text">In the near future, Major Mira Killian is the first of her kind: A human saved from a
+              terrible crash, who is cyber-enhanced to be a perfect soldier devoted to stopping the world's most
+              dangerous criminals.</p>
+          </div>
+          <div class="card-footer">
+            <span class="badge bg-primary text-light">12:00pm</span>
+            <span class="badge bg-primary text-light">1:00pm</span>
+            <span class="badge bg-primary text-light">3:00pm</span>
+            <span class="badge bg-primary text-light">5:30pm</span>
+            <span class="badge bg-primary text-light">7:00pm</span>
+            <span class="badge bg-primary text-light">9:30pm</span>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/kongskullisland.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kong: Skull Island</h5>
+            <p class="card-text">A team of scientists explores an uncharted island in the Pacific, venturing into the
+              domain of the mighty Kong, and must fight to escape a primal Eden.</p>
+          </div>
+          <div class="card-footer">
+            <span class="badge bg-primary text-light">12:00pm</span>
+            <span class="badge bg-primary text-light">1:00pm</span>
+            <span class="badge bg-primary text-light">3:00pm</span>
+            <span class="badge bg-primary text-light">5:30pm</span>
+            <span class="badge bg-primary text-light">7:00pm</span>
+            <span class="badge bg-primary text-light">9:30pm</span>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="text-center">
+        <form>
+          <h1 class="text-primary my-5" id="deals">Sing up for Movie Club Awards</h1>
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Enter email">
+          </div>
+          <button type="button" class="btn btn-primary popover-dismiss" data-container="body" data-toggle="popover" data-placement="top"
+            data-content="Submit your email to receive great movies awards deals!">
+            Submit
+          </button>
+        </form>
+      </div>
+
+      <div class="container my-5">
+        <ul class="nav nav-inline">
+          <li class="nav-item">
+            <small><a class="nav-link active" href="#">Movie Rewards</a></small>
+          </li>
+          <li class="nav-item">
+            <small><a class="nav-link" href="#">Movies@news.org</a></small>
+          </li>
+          <li class="nav-item">
+            <small><a class="nav-link" href="#">Info@academycinemas.com</a></small>
+          </li>
+          <li class="nav-item">
+            <small><a class="nav-link" href="#">2019 Academy Cinemas&reg;</a></small>
+          </li>
+        </ul>
+      </div>
+
+
+
+
+
+
+    </div>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"></script>
+    <script>
+      $('.popover-dismiss').popover({
+        trigger: 'focus'
+      })
+    </script>
+    <!-- calling the dropdown via javascript-->
+    <script>
+      $('.dropdown-toggle').dropdown()
+    </script>
+</body>
+
+</html>
